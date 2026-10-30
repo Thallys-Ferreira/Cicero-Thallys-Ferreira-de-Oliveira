@@ -1,0 +1,28 @@
+
+@import "tailwindcss";
+
+@theme {
+  --font-genos: "Genos", sans-serif;
+
+  --color-vinci-red: #E51837;
+  --color-vinci-black: #1A1A1A;
+  --color-vinci-gray: #747474;
+  --color-vinci-muted: #685757;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: var(--font-genos);
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
