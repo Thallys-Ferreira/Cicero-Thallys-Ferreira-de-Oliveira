@@ -1,8 +1,7 @@
 
 <script setup>
 import vinciHeader from './components/vinciHeader.vue'
-import vinciFooter from './components/vinciFooter.vue'
-import megaMenu from './components/megaMenu.vue';
+import vinciFooter from './components/vinciFooter.vue';
 </script>
 
 <template>

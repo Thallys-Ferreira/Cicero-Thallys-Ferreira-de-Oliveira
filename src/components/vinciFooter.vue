@@ -8,7 +8,7 @@
     <div class="shrink-0">
       <RouterLink to="/" class="flex items-center gap-[15px]">
         <img
-          src="/assets/logoVinci.png"
+          :src="`${import.meta.env.BASE_URL}assets/logoVinci.png`"
           alt="Logo Vinci"
           class="h-auto w-10"
         >

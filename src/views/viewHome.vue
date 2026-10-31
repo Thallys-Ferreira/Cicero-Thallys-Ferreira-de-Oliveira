@@ -2,7 +2,7 @@
 const carros = [
   {
     nome: 'Vinci Model V2',
-    imagem: `${import.meta.env.BASE_URL}assets/modelo1.jpeg`,
+    imagem: `${import.meta.env.BASE_URL}assets/modelo1.png`,
     alt: 'Vinci Model V2',
     descricao: 'A SUV mais robusta da categoria',
     potencia: '300 cavalos',

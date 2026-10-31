@@ -6,7 +6,7 @@
       <!-- Imagem do carro -->
       <figure class="w-full">
         <img
-          src="/assets/viewmodel1.png"
+          :src="`${import.meta.env.BASE_URL}assets/viewmodel1.png`"
           alt="Vinci Model V2"
           class="mx-auto h-auto w-full object-contain"
         >
@@ -55,7 +55,7 @@
 
     <section>
       <figure class="w-full">
-        <img src="/assets/banner4.png" alt="" class="w-full h-auto object-cover">
+        <img :src="`${import.meta.env.BASE_URL}assets/banner4.png`" alt="" class="w-full h-auto object-cover">
       </figure>
     </section>
 
@@ -63,22 +63,22 @@
       <div>
         <h2 class="text-xl uppercase mb-5">Recarga Rápida</h2>
         <p class="text-sm text-[#979797] mb-5 px-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
-        <figure><img src="/assets/recarga.png" alt="" class="w-full h-auto"></figure>
+        <figure><img :src="`${import.meta.env.BASE_URL}assets/recarga.png`" alt="" class="w-full h-auto"></figure>
       </div>
       <div>
         <h2 class="text-xl uppercase mb-5">Painel de Instrumentos</h2>
         <p class="text-sm text-[#979797] mb-5 px-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
-        <figure><img src="/assets/painel.png" alt="" class="w-full h-auto"></figure>
+        <figure><img :src="`${import.meta.env.BASE_URL}assets/painel.png`" alt="" class="w-full h-auto"></figure>
       </div>
       <div>
         <h2 class="text-xl uppercase mb-5">Pontos de Recarga</h2>
         <p class="text-sm text-[#979797] mb-5 px-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-        <figure><img src="/assets/pontos.png" alt="" class="w-full h-auto"></figure>
+        <figure><img :src="`${import.meta.env.BASE_URL}assets/pontos.png`" alt="" class="w-full h-auto"></figure>
       </div>
       <div>
         <h2 class="text-xl uppercase mb-5">Design Premiado</h2>
         <p class="text-sm text-[#979797] mb-5 px-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
-        <figure><img src="/assets/design.png" alt="" class="w-full h-auto"></figure>
+        <figure><img :src="`${import.meta.env.BASE_URL}assets/design.png`" alt="" class="w-full h-auto"></figure>
       </div>
     </section>
 
@@ -151,7 +151,7 @@
       <!-- Imagem do Carro na parte inferior -->
       <div class="px-0 sm:px-15 py-5 mt-10">
         <figure>
-          <img src="/assets/specs.png" alt="Vinci Model V2 Specs" class="w-full h-auto object-contain">
+          <img :src="`${import.meta.env.BASE_URL}assets/specs.png`" alt="Vinci Model V2 Specs" class="w-full h-auto object-contain">
         </figure>
       </div>
     </section>
