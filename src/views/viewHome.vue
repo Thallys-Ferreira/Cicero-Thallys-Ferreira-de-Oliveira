@@ -1,9 +1,8 @@
-
 <script setup>
 const carros = [
   {
     nome: 'Vinci Model V2',
-    imagem: '/assets/modelo1.jpeg',
+    imagem: `${import.meta.env.BASE_URL}assets/modelo1.jpeg`,
     alt: 'Vinci Model V2',
     descricao: 'A SUV mais robusta da categoria',
     potencia: '300 cavalos',
@@ -13,7 +12,7 @@ const carros = [
   },
   {
     nome: 'Vinci Model V1',
-    imagem: '/assets/modelo2.png',
+    imagem: `${import.meta.env.BASE_URL}assets/modelo2.png`,
     alt: 'Vinci Model V1',
     descricao: 'A SUV mais robusta da categoria',
     potencia: '300 cavalos',
@@ -29,7 +28,7 @@ const carros = [
     <!-- Banner principal -->
     <section
       class="flex h-[500px] w-full items-end bg-cover bg-center bg-no-repeat px-5 pb-[50px] pt-10"
-      style="background-image: url('/assets/banner1.png')"
+      :style="{ backgroundImage: `url(${import.meta.env.BASE_URL}assets/banner1.png)` }"
     >
       <div class="mx-auto flex w-full max-w-[1180px] flex-col items-start justify-end">
         <div class="flex w-full flex-col md:w-1/2">
@@ -94,7 +93,7 @@ const carros = [
 
           <figure class="mt-5">
             <img
-              src="/assets/modelo1.png"
+              :src="`${import.meta.env.BASE_URL}assets/modelo1.png`"
               alt="Vinci Model V2"
               class="mx-auto mt-[60px] mb-5 h-auto max-w-[80%] object-contain"
             >
@@ -140,7 +139,7 @@ const carros = [
 
           <figure class="mt-5">
             <img
-              src="/assets/modelo2.png"
+              :src="`${import.meta.env.BASE_URL}assets/modelo2.png`"
               alt="Vinci Model V1"
               class="mx-auto mt-5 mb-0 h-auto w-123 object-contain"
             >
@@ -162,7 +161,7 @@ const carros = [
     <!-- Banner promocional 1 -->
     <section
       class="flex h-[400px] w-full items-end bg-cover bg-center bg-no-repeat px-5 pb-[50px] pt-10"
-      style="background-image: url('/assets/banner2.jpeg')"
+      :style="{ backgroundImage: `url(${import.meta.env.BASE_URL}assets/banner2.jpeg)` }"
       aria-label="Banner promocional Vinci"
     ></section>
 
@@ -202,10 +201,8 @@ const carros = [
     <!-- Banner promocional 2 -->
     <section
       class="flex h-[400px] w-full items-end bg-cover bg-center bg-no-repeat px-5 pb-[50px] pt-10"
-      style="background-image: url('/assets/banner3.jpeg')"
+      :style="{ backgroundImage: `url(${import.meta.env.BASE_URL}assets/banner3.jpeg)` }"
       aria-label="Segundo banner promocional Vinci"
     ></section>
-
-    <!-- Catálogo completo de veículos -->
   </main>
 </template>

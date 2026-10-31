@@ -5,7 +5,7 @@
       <!-- Logótipo -->
       <RouterLink to="/" class="flex shrink-0 items-center justify-center gap-3 md:gap-5">
         <img
-          src="/assets/logoVinci.png"
+          :src="`${import.meta.env.BASE_URL}assets/logoVinci.png`"
           alt="Logo Vinci"
           class="h-auto w-8 md:w-10"
         >
@@ -93,7 +93,7 @@
             </ul>
           </div>
 
-          <!-- Grelha de Veículos (Utilizando apenas 2 imagens base alternadas) -->
+          <!-- Grelha de Veículos -->
           <div class="flex-1">
             <span class="text-xs tracking-[0.2em] text-neutral-400 uppercase mb-6 block font-semibold">
               Veículos
@@ -153,13 +153,13 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
 }
 
-// Configurado para alternar apenas entre os seus 2 PNGs principais
+// Configurado com o BASE_URL dinâmico para o GitHub Pages não quebrar as imagens
 const vehicles = ref([
-  { name: 'MODELO V1', image: '/assets/modelo1.png' },
-  { name: 'MODELO V2', image: '/assets/modelo2.png' },
-  { name: 'MODELO V3', image: '/assets/modelo1.png' },
-  { name: 'MODELO V1', image: '/assets/modelo2.png' },
-  { name: 'MODELO V2', image: '/assets/modelo1.png' },
-  { name: 'MODELO V3', image: '/assets/modelo2.png' }
+  { name: 'MODELO V1', image: `${import.meta.env.BASE_URL}assets/modelo1.png` },
+  { name: 'MODELO V2', image: `${import.meta.env.BASE_URL}assets/modelo2.png` },
+  { name: 'MODELO V3', image: `${import.meta.env.BASE_URL}assets/modelo1.png` },
+  { name: 'MODELO V1', image: `${import.meta.env.BASE_URL}assets/modelo2.png` },
+  { name: 'MODELO V2', image: `${import.meta.env.BASE_URL}assets/modelo1.png` },
+  { name: 'MODELO V3', image: `${import.meta.env.BASE_URL}assets/modelo2.png` }
 ])
 </script>
