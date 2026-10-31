@@ -5,7 +5,7 @@
       <!-- Logótipo -->
       <RouterLink to="/" class="flex shrink-0 items-center justify-center gap-3 md:gap-5">
         <img
-          :src="`${import.meta.env.BASE_URL}assets/logoVinci.png`"
+          :src="`${base}assets/logoVinci.png`"
           alt="Logo Vinci"
           class="h-auto w-8 md:w-10"
         >
@@ -145,6 +145,7 @@
 </template>
 
 <script setup>
+const base = import.meta.env.BASE_URL
 import { ref } from 'vue'
 
 const isMenuOpen = ref(false)

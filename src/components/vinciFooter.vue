@@ -1,3 +1,7 @@
+<script setup>
+const base = import.meta.env.BASE_URL
+</script>
+
 
 <template>
   <footer
@@ -8,7 +12,7 @@
     <div class="shrink-0">
       <RouterLink to="/" class="flex items-center gap-[15px]">
         <img
-          :src="`${import.meta.env.BASE_URL}assets/logoVinci.png`"
+          :src="`${base}assets/logoVinci.png`"
           alt="Logo Vinci"
           class="h-auto w-10"
         >
